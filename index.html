@@ -3,64 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vldeyycom</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header class="header">FB : Wulan Della</header>
+<header class="header">Video Player</header>
 
 <main class="container">
 
   <div class="video-wrapper">
+
+    <!-- OVERLAY PENANGKAP KLIK -->
+    <div id="videoOverlay"></div>
+
     <video id="video" controls>
-        <source src="video.mp4" type="video/mp4">
+        <source src="assets/video/video.mp4" type="video/mp4">
     </video>
 
     <!-- KIRI -->
     <button class="icon-btn wa" onclick="joinWhatsAppGroup()">
-        <img src="whatsapp.png" alt="">
+        <img src="assets/icons/whatsapp.png" alt="">
         <span>Video Lainnya</span>
     </button>
 
     <!-- KANAN -->
     <button class="icon-btn fb" onclick="openFacebookPage()">
-        <img src="facebook.png" alt="">
-        <span>Banyak Videy</span>
-    </button>
-</div>
-
-
-
-
-    <!-- BAGIKAN -->
-    <!-- BAGIKAN -->
-<button class="share-btn" id="shareBtn">
-    Bagikan
-</button>
-
-<div class="share-links" id="shareLinks">
-    <button class="share-item wa" onclick="shareWhatsApp()">
-        <img src="whatsapp.png">
-        <span>WhatsApp</span>
+        <img src="assets/icons/facebook.png" alt="">
+        <span>Banyak Video</span>
     </button>
 
-    <button class="share-item tg" onclick="shareTelegram()">
-        <img src="telegram.png">
-        <span>Telegram</span>
-    </button>
+  </div>
 
-    <button class="share-item copy" onclick="copyLink()">
-        <img src="link.png">
-        <span>Salin</span>
-    </button>
-</div>
-
-
+  <button class="share-btn" id="shareBtn">
+      Bagikan
+  </button>
 
 </main>
 
-<script src="main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
-
